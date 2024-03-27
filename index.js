@@ -18,7 +18,7 @@ app.get('/GetlibraryByName', LibraryController.GetlibraryByName);
 app.listen(port, async () => {
     try {
         await mongoose.connect(mongoURL);
-        console.log("server run at: ", port)
+        console.log("server run at port: ", port)
     }
     catch(error) {
         console.log(error)
